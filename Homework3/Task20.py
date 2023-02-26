@@ -21,15 +21,15 @@ enLetters5 = {'k', 'ж', 'з', 'х', 'ц', 'ч'}
 enLetters8 = {'j', 'x', 'ш', 'э', 'ю'}
 enLetters10 = {'q', 'z', 'ф', 'щ', 'ъ'}
 
-dictEn = {'8' : enLetters8, '10' : enLetters10, '1': enLetters1, '2': enLetters2, 
+dictLet = {'8' : enLetters8, '10' : enLetters10, '1': enLetters1, '2': enLetters2, 
           '3' : enLetters3, '4': enLetters4, '5': enLetters5}
 
 str = input('Введите слово: ')
 str = str.lower()
 score = 0
 for k in range(0, len(str)): # идем по строке, перебираем по одной букве
-    for i in dictEn:         # идем по словарю по ключам i
-        for j in dictEn[i]:  # идем по значениям, j - это одна буква в множестве под ключом i
+    for i in dictLet:         # идем по словарю по ключам i
+        for j in dictLet[i]:  # идем по значениям, j - это одна буква в множестве под ключом i
             if str[k] == j:
                 i = int(i)
                 print(f'{str[k]} -> {i}')
