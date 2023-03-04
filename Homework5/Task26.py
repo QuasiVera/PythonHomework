@@ -12,8 +12,8 @@ A = 3; B = 5 -> 243 (3⁵)
 def Pow(a,b):
     if b==0: return 1
     if b==1: return a
-    else:
-        return Pow(a,b-1)*a
+    
+    return Pow(a,b-1)*a
 
 #========================= Ввод данных ==================
 

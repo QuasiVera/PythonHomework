@@ -13,9 +13,8 @@
 def Sum(a,b):
     if b==0: return a
     if a==0: return b
-    s = Sum(a,b-1)
 
-    return s+1
+    return Sum(a,b-1)+1
 
 #========================= Ввод данных ==================
 
